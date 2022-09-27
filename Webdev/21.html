@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        .container{
+            font-size: 10px;
+            border: 3px solid purple;
+            height: 100vh;/* vh --> view height and 100vh means that it takes full heiht of web page */
+            width: 100vw;
+        }
+
+        h1{
+            text-align: center;
+            
+        }
+
+        #first{
+            font-size: 2em;/*em means 10 times ho jae font size apne parents ka i.e container ka */
+            padding: 3em;
+            /* go and check in inspect option , in computed section, and it takes the three times of fontsize padding i.e 90 pixel */
+
+        }
+        #second{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading.</h1>
+        <h1 id="second">This is second heading.</h1>
+        <h1 id="third">This is third heading.</h1>
+    </div>
+</body>
+</html>

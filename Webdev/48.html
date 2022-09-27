@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and cleartimeout</title>
+</head>
+<body>
+    <footer>
+        Time Now is <span id="time"></span>
+    </footer>
+
+    <script>
+        // setTimeout --> allows us to run the function once after the interval 
+        // clearTimeout --> setTimeout ko delete krta hai 
+        console.log("Akash");
+
+        function greet(name){
+            console.log("Hello , Good morning" + name);
+        }
+
+        // let pos = setTimeout(greet,5000,"Akash");
+        // console.log(pos)
+        // yeh ek ID return karega jiski madad se hum isse reset bhi kar sakte hain, console par jaienge settimout run kareinge , vo hume ek ID dega then, next time run krne par , clearTimeout(ID) then Enter kar denge toh vo settime out balla run mhi hoga
+        // setTimeout(greet("Akash"),5000);--> aise mhi kar sakte 
+        // time is in ms i,e 5000ms = 5sec and the other argument is a function
+
+
+        // setInterval --> allows us to run the function repeatdly after the interval
+        //  let intervalID = setInterval(greet,1000,"akash");
+        //  clearInterval(intervalID);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime, 1000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, margin and padding</title>
+
+    <style>
+        .contaier{
+            background-color: rgb(208 255 255);
+            /* inspect mei jakkar container par click karke color choose karlo */
+            border: 3px solid black;
+            border-radius: 5px;
+            width: 500px;
+            box-sizing: border-box;/*isse width fix ho jaegii evem after padding chamge karne par bhi same rahegi // simply --> width ko fix kar deta hai   */
+            
+            /* padding has four types padding-left/ padding-right / padding-top / padding-bottom  */
+            padding: 20px;/*this comes from all the four sides*/
+            padding: 34px 17px;/* this 34 is for y axis and bottom and 17 for left and right(x-axis)*/
+
+            /* padding = top right bottom left; --> TLBT */
+            padding : 35px 54px 35px 34px;/* inspect mei jakkar container par click karke color choose karlo */
+
+
+            margin: 5px;
+            margin: auto;/* beech mei laa dega */ 
+            /* all same with margin padding balla  */
+        }
+
+
+        /* Universal Selector */
+        /* apply to all element */
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaier">
+        <h3>This is my heading,</h3>
+        <p id="first">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam possimus aliquam asperiores dolorem laborum explicabo consequuntur officia quam, debitis eaque!
+        </p>
+    </div>
+    
+    <div class="contaier">
+        <h3>This is my heading,</h3>
+        <p id="second">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam possimus aliquam asperiores dolorem laborum explicabo consequuntur officia quam, debitis eaque!
+        </p>
+    </div>
+
+    <div class="contaier">
+        <h3>This is my heading,</h3>
+        <p id="third">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam possimus aliquam asperiores dolorem laborum explicabo consequuntur officia quam, debitis eaque!
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Variables and custum properties</title>
+</head>
+
+<style>
+
+    :root{
+        --boxcolor: pink;
+        --vari: yellow;
+        --maxwidth: 500px;
+    }
+
+    .container{
+        display: flex;
+        width: var(--maxwidth);
+        
+    }
+
+    .box{
+        /* the scope of this variabble is only within this block ,,, to make it global we use root */
+        /* --boxcolor:pink; */
+        width: 200px;
+        height: 200px;
+        border: 2px solid blue;
+        background-color: var(--boxcolor);
+        margin: 2px 20px;
+        box-shadow: 5px 4px 10px var(--vari);
+    }
+
+
+
+</style>
+
+
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

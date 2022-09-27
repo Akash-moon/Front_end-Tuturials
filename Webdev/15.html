@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links And Buttons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .container{
+            background-color: rgb(171 255 171);
+            border: 3px solid red;
+            border-radius: 7px;
+            font-family: 'Ubuntu', sans-serif;
+            width: 650px;
+            padding: 35px;
+            margin: 35px auto;
+        }
+        a:hover{
+            color: orangered;/* jab bhi hum cursor leke jaein uska color black ho jaeigaa*/
+            background-color: greenyellow;
+        }
+        /* a:visited{
+            background-color:purple;visit karne par vo properties aa jaeingii
+        } */
+
+        .btn{
+            text-decoration: none;/*removes the underline under the Read More part*/
+            background-color: rgb(171 255 171);
+            color: black;
+            border: none;/*removes the border of the contact us part*/
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+            cursor: pointer;
+            padding: auto;
+            margin: auto;
+            height: auto;
+
+        }
+        #bold{
+            /* font-weight: bold; */
+            font-size: 15px;
+            font-weight: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="item" class="container">
+        <h3>This is header...</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores labore eligendi quas fugit accusantium sed maiores asperiores quae officia praesentium eveniet, repellat quibusdam! Eos quos, quam recusandae consequuntur odit quibusdam.</p>
+
+        <a href="https://www.omegle.com/" class="btn" target="_blank">Read More</a>
+        <button id="bold" class="btn">Contact Us</button>
+
+    </div>
+</body>
+</html>

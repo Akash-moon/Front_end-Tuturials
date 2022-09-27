@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bix shadow and Text shadow</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+</head>
+
+
+<style>
+    body{
+        /* color: white; */
+        font-family: 'Baloo Bhai';font-size: 15px;
+    }
+
+
+    .container{
+        display: flex;
+    }
+
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid pink; */
+        background-color: wheat;
+        /* box-shadow: inset 15px 10px 10px burlywood; */
+        box-shadow: 15px 10px 10px burlywood;
+        box-shadow: 15px 10px 10px burlywood,10px 15px 10px pink;
+
+    }
+
+    .card h2{
+        text-shadow: 3.5px 2px 3px white;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>CARD1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perspiciatis similique sit vitae amet, eveniet culpa rerum? Asperiores suscipit omnis maxime quidem fuga aperiam! Sed.</p>
+        </div>
+
+
+        <div class="card" id="card2">
+            <h2>CARD2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat molestiae aliquid, numquam unde impedit totam dolore? A temporibus corrupti quas nihil hic iste repellendus.</p>
+        </div>
+
+
+        <div class="card" id="card3">
+            <h2>CARD3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo autem delectus, pariatur ipsam necessitatibus illo accusamus nostrum eum, consequatur cumque magnam voluptate, minus amet sapiente!</p>
+        </div>
+
+    </div>
+</body>
+</html>

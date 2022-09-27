@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <!-- for all paragraphs.... -->
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+
+    <!-- for ID -->
+    <style>
+        #blue{
+            color: blue;
+        }
+    </style>
+
+    <!-- For class -->
+    <style>
+        #dick{
+            background-color: brown;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .bgblue{
+            background-color: blue;
+        }
+
+
+        /* this is multiple grouping..... */
+        footer ,span {
+            background-color: pink;
+        }
+    </style>
+
+    
+
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+
+    <!-- changes to darkblue -->
+    <p>This is me , this is you , this is all we need !!!!!!!!!</p>
+    <p>Chotti bacchi ho kya .....</p>
+
+    <!-- chamges to blue -->
+    <div>
+        <p id="blue">concept hi galat hai tumhara.....</p>
+        <span>This is span.</span>
+    </div>
+
+    <!-- changes to purple -->
+    <p class="yellow bgblue">bhaotttttt.......shi........</p>
+
+    <!-- ID has more priority than class -->
+    <p id="blue" class="yellow">Mahi maar rha hai...........</p>
+
+    <!-- footer and span changes to pink bvackground... -->
+    <footer>This is footer.</footer>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        This is a container.
+    </div>
+
+    <script>
+        // function greet(){
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        // Shortcut hai
+
+        let greet = ()=> {
+            console.log("Good Moning");
+        }
+        setTimeout(() => {
+            console.log("We are in tye settimout");
+        }, 2000);
+        // 3 sec baad above balla print ho jaegaa 
+
+        let sum = (a,b)=>{
+            return a + b;
+            // return bhi lagane ki jarrorat nhi hai
+        }
+        console.log(sum(3,4));
+
+        let divide = (a,b)=> a/b;
+        console.log(divide(5,2)); 
+        // one line code mei braces ki need nhi hai
+
+        let half = a => a / 2;
+        // agar ek hi argument hai toh
+        console.log(half(8));    
+
+
+
+        let obj = {
+            value:"Hello ",
+            name: ["Akash","Harsh","anand"],
+            speak(){
+                this.name.forEach(students => {
+                    console.log(this.value + "Good morning " + students);
+                    // If we use function in the foreach loop then this will return un defined , kyunki this jo hai vo function ke andar hi find karta and vi usse milta nhi , so arrow function kan yeh fayda hai
+                    // and this inside the this is kniown is lexical this 
+                });
+            }
+        }
+
+        // this means yeh object i.e, this = obj
+        obj.speak();
+
+
+
+
+    </script>
+</body>
+
+</html>

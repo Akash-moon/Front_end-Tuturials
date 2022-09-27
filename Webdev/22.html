@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin: 3px;
+        }
+
+        /* 0 to 300 tak yehh CSS lagoo kar doo */
+        @media (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        /* inpect par jakar responsive mei check karn hai */
+        @media (min-width:301px) and (max-width: 600px){
+            #box2{
+                display: block;
+                background-color: pink;
+            }
+        }
+
+        @media (min-width:601px) and (max-width: 900px){
+            #box3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        
+        /* i.e 900 se uper ke liye  */
+        @media (min-width:901px){
+            #box4{
+                display: block;
+                background-color: black;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mei gareeb hun....</div>
+    <div class="box" id="box2">Mei khush hun ....</div>
+    <div class="box" id="box3">Mei moody hun.....</div>
+    <div class="box" id="box4">Mei amar hun ..... </div>
+</body>
+</html>

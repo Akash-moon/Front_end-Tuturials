@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation The DOM!!!</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>ddddd</li>
+            <li>eeeeeee</li>
+            <li>fffffffffff</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Another class
+    </div>
+
+    <script>
+        // let main = document.getElementById('main');
+        // // yeh iski location dedega and then hum iski HTML ko change kar sakte hain
+        // console.log(main);
+
+        // let nav = document.getElementById('nav');
+        // console.log(nav);
+        // // we can also change the HTML by our element , console mei jakar nav.innerHTML(yeh ek string return karega ) likhpo and then enter and then nav.innerHTMl = "<li>Dynammic Element</li>" then Enter uske baad HTML mei bas ek hi element bachega .
+
+        // let containers = document.getElementsByClassName('container');
+        // console.log(containers);
+        // This will return the HTML Collection like array ,if i write container[0], it gives me first class and so on
+
+        // let selector = document.querySelector('.container');
+        // console.log(selector);
+        // jiski phlii class container hogi usko return kar degaa
+        
+        // let selector = document.querySelector('#nav>li');
+        // console.log(selector);
+        // // nav ka first li i.e Home
+        
+        let x = document.querySelectorAll('#nav>li');
+        console.log(x);
+        // yeh sab ko select kar legaa ,then x[0].innerHTML = "Inserted"
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

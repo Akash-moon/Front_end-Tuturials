@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crete A Navigation Menu</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /*removes bullet*/
+            margin: 7px;
+            /*set by inspect, gap between Home, services and contact*/
+
+        }
+
+        .navbar li a {
+            color: white;
+
+            text-decoration: none;
+            /*removes underline*/
+            padding: 5px 30px;
+            font-size: 18px;
+        }
+
+        .navbar li a:hover {
+            color: yellow;
+            /* box-shadow: inset 100px 0 0 0 black; */
+        }
+        
+
+        .navbar input {
+            float: right;
+            width: 18%;
+            padding: 6px 10px;
+            margin: 3px 200px;
+            border: 2px solid wheat;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://www.google.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">About</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Services</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Contact Us</a></li>
+            <!-- this is for search Box -->
+
+            <div>
+                <input type="text" id="search" placeholder="Seach Here....">
+            </div>
+        </ul>
+    </nav>
+</body>
+
+</html>

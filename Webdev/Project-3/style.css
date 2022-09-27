@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    position: absolute;
+    /* Cross shift kar rha tha  */
+    background-color: rgb(28, 25, 25);
+    /* width: 300px; */
+    font-family: 'Fira-Sans', cursive;
+    /* font-size: 12px; */
+    height: 137vh;
+    /* Cause i dont want any scroll bars  */
+}
+
+.sidebar nav{
+    padding: 12px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.sidebar nav li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    /* color: black; */
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 100vw;
+    padding-left: 40px;
+}
+
+.infocontainer{
+    /* background-color: cyan; */
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    margin: 144px auto;
+    /* beech mei laane ke liye */
+    justify-content: space-around;
+    /* The item will evenly distributed  */
+}
+
+.devinfo{
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    font-family: 'Pacifico', cursive;
+    
+
+}
+
+.devpic img{
+    width: 265px;
+    /* width of pictire */
+
+}
+
+.hello{
+    font-size: 3em;
+    font-family: 'Fira Sans',sans-serif;
+    /* Ballu bhai */
+    
+}
+
+.name{
+    font-size: 4rem;
+    font-family: 'Fira-Sans', cursive;
+}
+
+.about{
+    font-size: 2.5em;
+    font-family: 'Fira Sans',sans-serif;
+    /* Ballu bhai */
+    
+}
+
+.moreabout{
+    font-size: 2.1em;
+    font-family: 'Fira Sans',sans-serif;
+    /* Ballu bhai */
+    margin-top: 20px;
+}
+
+/* lamba button */
+
+.btns button{
+    padding: 6px 3px;
+    margin: 4px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: cyan;
+    box-shadow: black 2px 3px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.btns button:hover{
+    background-color: white;
+    color: cyan;
+}
+.btns{
+    margin-top: 34px;
+    font-size: 10px;
+}
+
+
+
+/* ********************************************************************************************************
+ */
+ /* Contact CSS */
+
+ .contactform{
+    /* padding-top: 144px; */
+    padding: 144px 34px;
+    font-family: 'Fira-Sans', cursive;
+    margin: 30px 90px;
+ }
+
+ .contactform h1{
+     /* text-align: center;*/
+
+    padding: 12px 0;
+    font-family: 'Fira Sans',sanss-serif;
+    
+ } 
+ .contactform form div{
+    padding: 6px 0px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contactform form div input{
+    width: 16vw;
+    border-radius: 9px;
+    padding: 4px;
+    font-size: large;
+    font-weight: bold;
+    margin: 6px 0px;
+    /* box-shadow: 3px 4px rgb(226, 220, 220); */
+ }
+
+#emailHelp{
+    font-size: 9px;
+    margin-top: -6px;
+    color: darkgoldenrod;
+}
+
+/* check box mei dikkat aa rhi hai */
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0px;
+}
+
+/* chotta button */
+
+.btn2 button{
+    border: 2px solid black;
+    background-color: cyan;
+    border-radius: 30px;
+    width: 99px;
+    padding: 4px 21px;
+    box-shadow: black 2px 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    /* margin-top: -18px; */
+}
+
+.btn2 button:hover{
+    background-color: white;
+    color: cyan;
+}
+
+
+
+/* ***************************************************************************
+ */
+ /* Blog CSS */
+
+
+/* .blogitem{
+    margin: 20px 30px;
+} */
+
+.blogcontainer{
+    margin: 30px 90px;
+}
+
+.blogcontainer h1{
+    font-family: 'Fira Sans',sans-serif;
+    /* margin-left: 90px; */
+}
+
+
+.blogitem h2,p{
+    margin-left: 5px;
+    font-family: 'Fira-Sans', cursive;
+
+ }
+
+ /* **************************************************************** */
+ /* My Intro Page clasees */
+
+
+ .intro{
+    margin: 30px 90px;
+ }
+
+ .intro ul{
+    margin: 30px 90px;
+ }
+
+ .intro h1{
+    /* font-family: 'Fira Sans',sans-serif; */
+    font-family: 'Fira-Sans', cursive;
+    margin: 12px;
+ }
+
+ .intro p{
+    margin: 12px;
+ }
+ 
+ .skillcontainer{
+    margin: 12px;
+ }
+
+
+ /* line uppeer aa jaeigii */
+.skillitem{
+    display: flex;
+    font-family: 'Fira Sans',sans-serif;
+    align-items: center;
+}
+
+.skill {
+    width: 200px;
+    height: 6px;
+    background-color: purple;
+    border-radius: 3px;
+}
+
+/* manlo koi cheez mujhe 100% aati hai toh usli heifht kardo 200px */
+.hundred{
+    width: 200px;
+}
+
+.fifty{
+    width: 100px;
+    background-color: darkgreen;
+}
+
+.tfive{
+    width: 50px;
+    background-color: coral;
+}
+
+.project h1{
+    margin: 12px;
+    font-family: 'Fira-Sans', cursive;
+}
+
+.projectitem h2{
+    margin: 12px;
+}
+
+.projectitem p{
+    margin: 12px;
+}
+
+
+/* *********************************************************************************************** */
+/* Responsive ness of website  */
+
+@media (max-width : 1000px) {
+    /* *{
+        background-color: rgb(235, 243, 218);
+    } */
+
+    /* .sidebar{
+        transform: translate(-400px,0px);
+        position: absolute;
+    } */
+
+    .devpic{
+        display: none;
+    }
+
+    /* Jb bhi phone mei load ho toh font size 10px kar doo */
+    .devinfo{
+        font-size: 10px;
+    }
+
+    .btns{
+        font-size: 6px;
+    }
+}
+
+
+
+/* ************************************************************* */
+/* Hamburger Icons */
+/* cross right mei lanna padegaa */
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 140px;
+    margin-top: 5px;
+    width: 30px;
+}
+
+.ham{
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* side bar chale japoo */
+.sidebargo{
+    transform: translate(-400px,0px);
+    position: absolute;
+    transition: tranform 1s ease-in;
+    /* for hamburger icon */
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grids</title>
+</head>
+
+
+<style>
+    .container{
+        display: grid;
+        /* now our container become grid and container items becomes grid items */
+        grid-template-columns: 300px 200px 150px;
+        /* grid-template-columns: 300px 200px auto; */
+        /* teen column ban jaeinge jinki width 300px or 200px or 150px hogii */
+
+        /* grid-template-columns: 3fr 3fr 3frS; */
+
+        /* for more items we can do is */
+
+        grid-template-columns: repeat(6,auto);
+        /* 6 column banna do oritem laa do ek row mei and width kardo autoo */
+
+        grid-gap: 2rem;
+        /* this is used for giving the margin between grids */
+
+
+    }
+
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: rgb(248, 153, 36);
+        border: 3px solid black;
+        border-radius: 5px;
+        /* margin: 2px; */
+        padding: 5px 60px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+        <div class="item">This is Item-11</div>
+        <div class="item">This is Item-12</div>
+        <div class="item">This is Item-13</div>
+        <div class="item">This is Item-14</div>
+        <div class="item">This is Item-15</div>
+        <div class="item">This is Item-16</div>
+        <div class="item">This is Item-17</div>
+        <div class="item">This is Item-18</div>
+    </div>s
+</body>
+</html>

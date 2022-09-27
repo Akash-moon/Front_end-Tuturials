@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS position</title>
+    <style>
+
+        .container{
+            background-color: cornsilk;
+            border: 2px solid red;
+            height: 2500px;
+
+        }
+
+        .box{
+            border: 2px solid purple;
+            border-radius: 3px;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;/*sab horizontal ho jaeinge */
+        }
+        #box3{
+            /* relative to its normal pasition */
+            /* position: relative; */
+
+            /* relative to its parent element i.e box1 */
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+
+            /* fixed relative to the browser window and used to make the icon */
+            /* position: fixed;
+            right: 4px; */
+
+            /* chipak jaega apni jagah , and used to nake the navigation bar or menu */
+            position: sticky;
+            top: 4px;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- container hoga parent -->
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+
+</body>
+</html>

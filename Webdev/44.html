@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    console.log(10);
+
+    // for(let i = 0;i < 5;i++){
+    //     console.log(i);
+    // }
+
+    let arr = ["akash","anurag","harsh","ak","abhinav"];
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log("Hello " + arr[i]);   
+    // }
+
+    // ****************************************************************************/
+
+    //This can also be done by using foreach 
+    // isme hum ek function banna leinge 
+
+    // arr.forEach(function f(ele){
+    //     console.log("Hello " + ele);
+    // })
+
+    // ******************************************************************************
+
+    // for(ele of arr) console.log("Hello " + ele);
+
+
+    let employee={
+            name : "akash",
+            salary : 200,
+            role : "Programmer",
+            'wife 1':"hotyy"//with space 
+        }
+
+    for(i in employee) console.log(employee[i]);
+        
+
+
+    // **********************************************************************************
+    // while loop
+
+    let j = 0;
+    while(j != 5){
+        console.log(j);
+        j++;
+    }
+
+
+    // **********************************************************
+    // do while
+
+    do{
+        console.log(j);
+        j++;
+    }while(j != 3);
+    
+
+</script>
+</html>

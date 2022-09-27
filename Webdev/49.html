@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+
+<style>
+    .container{
+        font-size: 23px;
+        padding: 30px 20px;
+        border: 2px solid black;
+        color: white;
+        background-color: grey;
+        border-radius: 7px;
+        align-items: center;
+    }
+
+    span{
+        font-weight: bold;
+        color: cyan;
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        Current Time is <span id="time"></span> In India.
+    </div>
+
+    <script>
+        console.log("This is a Date and time tut.")
+        // let now = new Date();
+        
+        // let now = new Date("2023-10-23");
+        // // us time ki date and day shoq kae dega  
+        
+        // let now = new Date(year,month,day,hours,minutes,seconds,millisecnds);
+        let now = new Date(4098,6,31,4,5,67);
+        console.log(now);
+
+        // let yr = now.getFullYear(); 
+        // let mon = now.getMonth(); 
+        // let day = now.getDay(); 
+        // let date = now.getDate(); 
+        // console.log(yr);
+        // console.log(mon);
+        // console.log(day);
+
+        // now.setDate(32);// 1 tareek aa jaegi , 32 % 31 == 1
+        // now.set , issi tarah sab hote hain date,month,time,hours
+
+        setInterval(currentTime,1000);
+
+        function currentTime(){
+            time.innerHTML = new Date();
+
+        }
+
+
+
+
+        
+    </script>
+</body>
+</html>

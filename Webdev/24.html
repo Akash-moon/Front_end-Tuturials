@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributr and nth child pusedo selectors</title>
+</head>
+
+
+<style>
+    .container{
+        display: block;
+        width: 233px;
+        margin: auto;
+    }
+    input{
+        display: block;
+    }
+
+    input[type='text']{
+        color: red;
+        padding: 20px;
+        border: 3px solid yellow;
+    }
+
+    /* anchor tag jiska attribute taget hai usme apply karo CSS */
+    a[target]{
+        color: pink;
+        text-decoration: none;
+    }
+    
+    li:nth-child(4){
+        color: blueviolet;
+        border: 3px solid cyan;
+    }
+
+    li:nth-child(2n+0){
+        color: chartreuse;
+    }
+
+    /* orrrrrrrr */
+
+    li:nth-child(odd){
+        background-color: red;
+    }
+
+
+    li:nth-child(even){
+        background-color: pink;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+
+        <h2><a href="http://google.com" target="_blank">Go to Google....</a></h2>
+
+        <form action="noaction.php" class="formcontrol">
+            <input type="text" placeholder="Enter your name">            
+            <input type="password" placeholder="Enter your password">            
+            <input type="submit" placeholder="Submit">            
+
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 2</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+        </ul>
+    </div>
+</body>
+</html>

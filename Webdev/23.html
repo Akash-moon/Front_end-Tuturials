@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS</title>
+</head>
+
+<style>
+    h1{
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* div ke andar jitne bhi p hain ssb par apply hoo ,,, jithe bhi or kisi ke ander bhi ho p(div mei) */
+    div p{
+        color: green;
+        background-color: cyan;
+        font-weight: bold;
+    }
+
+    /* div li p{
+        color: blue;
+        background-color: black;
+    } */
+
+    div > p{
+        color: crimson;
+        background-color: darkgoldenrod;
+    }
+
+    div + p{
+        color: bisque;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <h1>This is the heading...</h1>
+
+    <div class="container">
+        <div class="row">
+
+            <ul>
+                <li><p>Lorem ipsum dolor sit amet.</p></li>
+                <p>This is oara inside list.</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is second paragrapgh</p>
+    </div>
+    <p>This is the outermot pragraph.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in js</title>
+</head>
+<body>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo reiciendis, adipisci incidunt iste, repellendus quasi, repudiandae aperiam aliquam illo animi. Nemo aut quas, fugit possimus recusandae unde enim a nulla architecto incidunt excepturi placeat eligendi quod exercitationem tempore neque eum nobis corporis? Sapiente labore saepe repudiandae iure doloribus quisquamP
+        </p>
+        
+        <div id="box"></div>
+    </div>
+
+    <script>
+        var str1 = "This is"
+        var str2 = " akash";
+        var str3 = " Akash is a bad boy"
+        // console.log(str1 + str2 + str3);
+
+        var temp = `${str1} watermelon and ${str2} is a bad boy`;
+        // f strings only used in backwards quotes.
+        console.log(temp); 
+        console.log(temp.length); 
+
+
+        // insert an string in the html
+
+        document.getElementById('box').innerHTML = '<h1> This is an box.</h1>'
+        
+    </script>
+
+
+</body>
+</html>

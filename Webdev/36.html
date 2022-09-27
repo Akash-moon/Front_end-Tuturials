@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 2</title>
+</head>
+
+
+<style>
+
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+
+    nav{
+        grid-area: navbar;
+    }
+
+    section{
+        grid-area: section;
+    }
+
+    aside{
+        grid-area: aside;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    @media (max-width: 300px){
+            body{
+                background-color: aqua;
+            }
+        }
+
+        /* inpect par jakar responsive mei check karn hai */
+        @media (min-width:301px) and (max-width: 600px){
+            body{
+                /* display: block; */
+                background-color: pink;
+            }
+            /* JAISE HI 301 PX HOO BESE USKA GRID CHANGE HO JAEEE */
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                ' aside aside aside aside'
+                'footer footer footer footer'
+                ;
+            }
+        }
+
+        @media (min-width:601px) and (max-width: 900px){
+            body{
+                /* display: block; */
+                background-color: yellow;
+            }
+        }
+        
+        /* i.e 900 se uper ke liye  */
+        @media (min-width:901px){
+            body{
+                /* display: block; */
+                background-color: green;
+            }
+        }
+
+        .bdr{
+            border: 2px solid black;
+            background-color: gold;
+            padding:9px 23px;
+        }
+</style>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact
+        </nav>
+
+        <section class="bdr">
+            <h1>Land Mera....</h1>
+        </section>
+
+        <aside class="bdr">
+            <h3>More About us...</h3>
+        </aside>
+
+        <footer class="bdr">copyright &COPY; Lorem ipsum dolor sit amet.</footer>
+
+    </div>
+</body>
+</html>

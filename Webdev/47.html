@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<style>
+    #btn{
+        padding: 12px;
+        border: 2px solid green;
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore sint natus itaque et obcaecati dolor beatae distinctio ad! Tenetur a itaque sed recusandae quasi vel eligendi distinctio laborum deserunt voluptates? Perferendis expedita maxime molestiae voluptates commodi sequi incidunt quos nihil, adipisci iure, non praesentium? A exercitationem deserunt quaerat porro. Quasi perferendis fugit facere hic, autem praesentium quibusdam sapiente nulla sequi saepe, suscipit expedita omnis voluptate asperiores animi tempore? Natus facere hic veritatis labore voluptate similique voluptatem reprehenderit quisquam debitis laborum! Quod distinctio facere tenetur vitae esse maxime, deleniti cumque voluptate quae quas ducimus reprehenderit accusamus nobis labore consectetur! Odit earum a, vel maiores aliquam temporibus laborum ducimus ipsum! Perspiciatis eos, ullam ducimus corrupti quis repellat voluptas, dolorem voluptatum suscipit voluptate architecto facilis. Ea at, asperiores tenetur totam, molestiae eius minima natus necessitatibus explicabo reiciendis itaque rem dolore ducimus voluptatum rerum ab cum neque sint sed architecto expedita facilis veritatis? Explicabo, dicta nam. Eos sunt ut dolorum cum pariatur et repudiandae enim magnam iste non reprehenderit quidem maiores quam neque, ad ipsa aspernatur suscipit cupiditate beatae sequi! Tenetur itaque totam similique numquam omnis! Commodi quos reprehenderit minus. Tempora veritatis doloremque beatae consequuntur iste harum, dolor blanditiis. Vel, quis. Tenetur, rerum officia suscipit distinctio praesentium natus laborum nesciunt similique nam, excepturi voluptas atque fugit ex? Voluptas aperiam quisquam officia voluptatem quos! Quae, esse hic totam, voluptates commodi id autem, provident nemo asperiores quidem enim voluptatem ut quam consequuntur sint quo placeat nam. Quisquam, ipsa nulla! Repudiandae earum itaque esse molestias veniam!</p>
+    </div>
+
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <!-- Button par click karne par show or hide hoo , iske liye ek hide function likhna padega  -->
+    <script>
+        function hide(){
+            btn = document.getElementById('btn');
+            para = document.getElementById('para');
+            // none matlab dissplay hai toh none karddoo 
+            if(para.style.display != 'none')
+            para.style.display = 'none';
+            else
+            para.style.display = 'block';
+        }
+        
+        para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('Mouse inside the para');
+        })
+
+        para.addEventListener('mouseout',function run(){
+            alert('Mouse outside the para');
+        })
+
+    </script>
+</body>
+</html>

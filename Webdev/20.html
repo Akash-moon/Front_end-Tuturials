@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box in CSS</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            /*corner ko chorker do daboo ke beech mei space aa jaee*/
+            /* justify-content: space-between; */
+            /* sab mei equal space aa jeaga including corners */
+            /* justify-content: space-evenly; */
+            /* kone mei kam beech mei jyada */
+            /* justify-content: space-around; */
+
+            align-items: center;
+        }
+
+        .item{
+            background-color: grey;
+            border: 2px solid black;
+            margin: 10px;
+            color: red;
+            height: 150px;
+            width: 100px;
+            /* padding: ; */
+        }
+
+        #item1{
+            order: 2;
+            /* flex-grow: 3; */
+        }
+
+        #item2{
+            order: 5;
+            flex-grow: 2;
+        }
+
+        #item3{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is Flexbox Tutoral.... </h2>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Six Box</div> -->
+    </div>
+</body>
+</html>

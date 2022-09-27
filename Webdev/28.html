@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and key frames</title>
+</head>
+
+<style>
+    .container{
+        /* display: flex; */
+        background-color: yellowgreen;
+    }
+
+    .box{
+        background-color: darkgrey;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        /* animation-name: akash; */
+        animation-name: akash2;
+        animation-duration: 4s;
+        animation-iteration-count: 1;/* 1 baar chalega*/
+        /* ab hum chahthe hain ki animation poora hoke apni jagah aaa jaeein then  */
+        /* animation-fill-mode: forwards; */
+        /* animation-timing-function: ease-in;phle slow chaeega then increaeses his speed */
+        /* ease-out: mei ulta hoga */
+        /* ease-in-out : phle fast then slow then fast */
+
+        /* animation-delay: 2s;animation 2 sec baad start hogaa */
+        /* animation-direction: reverse; */
+
+
+
+    }
+
+    @keyframes akash2{
+        
+        /* position relative honi chahiyeh takki move kar sake
+         */
+        0%{
+            /* 0% poora hona par yeh karoo */
+            top: 0px;
+            left: 0px;
+        } 
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }    
+    }
+
+    @keyframes akash{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>
